@@ -26,6 +26,15 @@ const ClimaScreen = () => {
     fetchClimaData();
   }, []);
 
+  if (!climaData) {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.Cargando}>Cargando...</Text>
+      </View>
+    );
+  }
+
+
 }
 
 export default ClimaScreen;
